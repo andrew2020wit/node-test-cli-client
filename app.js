@@ -9,8 +9,8 @@ commander
   .command("defaultCommand", { isDefault: true })
   .alias("d")
   .description("defaultCommand")
-  .action((parameter1) => {
-    defaultFunction(parameter1);
+  .action(() => {
+    defaultFunction();
   });
 
 commander.parse(process.argv);
