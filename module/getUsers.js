@@ -3,7 +3,7 @@ const axios = require("axios").default;
 
 const GetUsersEndPoint = "http://localhost:3000/user/show";
 
-function getUsers() {
+async function mainFunction() {
   console.log(chalk.bgMagenta("function getUsers() started"));
   axios
     .get(GetUsersEndPoint)
@@ -17,4 +17,4 @@ function getUsers() {
     });
 }
 
-module.exports.getUsers = getUsers;
+module.exports.getUsers = mainFunction;
