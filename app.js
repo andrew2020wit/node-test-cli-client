@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const commander = require("commander");
-const { getUsers } = require("./module/GetUsersEndPoint");
+const { getUsers } = require("./module/getUsers");
 
 commander.version("1.0.1").description("Configuration files creator.");
 
