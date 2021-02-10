@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const commander = require("commander");
-const { defaultFunction } = require("./module/default");
+const { getUsers } = require("./module/GetUsersEndPoint");
 
 commander.version("1.0.1").description("Configuration files creator.");
 
@@ -10,7 +10,7 @@ commander
   .alias("d")
   .description("defaultCommand")
   .action(() => {
-    defaultFunction();
+    getUsers();
   });
 
 commander.parse(process.argv);
